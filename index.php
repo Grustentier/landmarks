@@ -27,6 +27,7 @@ body{margin:0px;padding:0px}
 .myButton{background-color: rgb(54, 162, 235);color: white;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-top-right-radius: 5px;border-top-left-radius: 5px;cursor: pointer;padding: 10px;border: none;}
 .myButtonSmall{background-color: rgb(54, 162, 235);color: white;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;border-top-right-radius: 5px;border-top-left-radius: 5px;cursor: pointer;padding: 5px;border: none;}
 #resultContainer{display: none;}
+.dz-message{color: rgba(0, 0, 0, 0.3);font-size: 30px;text-align: center;margin-top: 57px;}
 </style>
   
 </head>
@@ -86,7 +87,7 @@ function appendContentToTab(tabCount){
 	//$("#tabs-"+tabCount+"").append("<button id='resetLandmarks-"+tabCount+"' class='ui-button resetLandmarks'>Reset</button>")
 	
 
-	$("#tabs-"+tabCount+"").append("<table><tr><td><img src='resources/images/template.png'/></td><td><div id='droppable-"+tabCount+"' class='ui-widget-header droppable'> </div></td><td><div id='draggableLandmarks-"+tabCount+"' class='ui-widget-content draggableLandmarks'> </div><button id='resetLandmarks-"+tabCount+"' class='resetLandmarks myButtonSmall'>Reset</button></td></tr><tr><td></td><td><div id='dropzone-"+tabCount+"' class='myDropzone' ><div class='dz-message needsclick'>Drop files here or click to upload.<br><span class='note needsclick'>(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span></div></div><div id='previewContainer-"+tabCount+"'> </div></td><td></td></tr></table>");
+	$("#tabs-"+tabCount+"").append("<table><tr><td><img src='resources/images/template.png'/></td><td><div id='droppable-"+tabCount+"' class='ui-widget-header droppable'> </div></td><td><div id='draggableLandmarks-"+tabCount+"' class='ui-widget-content draggableLandmarks'> </div><br><button id='resetLandmarks-"+tabCount+"' class='resetLandmarks myButtonSmall'>Reset</button></td></tr><tr><td></td><td><div id='dropzone-"+tabCount+"' class='myDropzone' ><div class='dz-message needsclick'>Drop your file with a frontal face here or click to upload.</div></div><div id='previewContainer-"+tabCount+"'> </div></td><td></td></tr></table>");
 	initDropable4Tab(tabCount);
 	initDropzone4Tab(tabCount);
 	createLandmarkMenu(tabCount);
