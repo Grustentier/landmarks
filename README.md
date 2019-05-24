@@ -1,6 +1,6 @@
 # landmarks
 
-New web-app for the forensic community for landmark positioning and comparing.
+New simple web-app for the forensic community for landmark positioning and comparing.
 
 At first, this app does not save any kind of data in the backend.
 
