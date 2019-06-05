@@ -8,13 +8,16 @@ body {
 .draggableLandmarks {
 	position: inherit;
 	float: right;
-	padding: 1em;
+	padding-left: 1em;
+	padding-right: 1.5em;
+	padding-top:1em;
 }
 
 .resetLandmarks {
-	position: inherit;
+	position: relative; 
+	top: 650px;
 	float: right;
-	padding: 1em;
+	width: 4em;
 }
 
 .droppable {
@@ -44,6 +47,12 @@ body {
 
 .lb{
 	background: url("../images/b.png") no-repeat center top transparent;
+	width: 20px;
+	height: 20px;
+}
+
+.lc{
+	background: url("../images/c.png") no-repeat center top transparent;
 	width: 20px;
 	height: 20px;
 }
@@ -178,7 +187,7 @@ body {
 	background: DodgerBlue;
 	padding: 10px;
 	min-height: 50px;
-	padding-top: 60px;
+	padding-top: 60px; 
 }
 
 #resultContainer {
@@ -195,7 +204,6 @@ body {
 
 #console{
 	margin-top:40px;
-	width:100%;
 	height:300px;
 	background:white;
 	text-align: left;
@@ -207,3 +215,5 @@ body {
 #MenuEntry2, #MenuEntry3 {
 	display: none;
 }
+
+#saveData{display:none;}
